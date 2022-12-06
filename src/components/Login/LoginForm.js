@@ -37,14 +37,14 @@ const LoginForm = () => {
         )}
         {error && <Error error={error} />}
       </form>
-      <Link to="/perdeu" className={styles.perdeu}>
+      <Link to="/login/perdeu" className={styles.perdeu}>
         Perdeu a senha?
       </Link>
 
       <div className={styles.cadastro}>
         <h2 className={styles.subtitle}>Cadastre-se</h2>
         <p>ainda não possui conta? Cadastre-se no site</p>
-        <Link className={stylesBtn.button} to="login/criar">
+        <Link className={stylesBtn.button} to="/login/criar">
           Cadastro
         </Link>
       </div>
