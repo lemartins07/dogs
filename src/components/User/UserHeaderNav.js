@@ -12,6 +12,10 @@ import styles from './UserHeaderNav.module.css'
 const UserHeaderNav = () => {
   const { userLogout } = useContext(UserContext)
   const [mobile, setMobile] = useState(null)
+
+  function Provisoria() {
+    setMobile(null)
+  }
   return (
     <nav className={styles.nav}>
       <NavLink to="/conta" end>
@@ -29,6 +33,7 @@ const UserHeaderNav = () => {
         <Sair />
         {mobile && 'Sair'}
       </button>
+      <button onClick={Provisoria}>Provisoria</button>
     </nav>
   )
 }
