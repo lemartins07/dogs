@@ -1,5 +1,5 @@
-import { useContext, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useContext, useState, useEffect } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 import { UserContext } from './../../context/UserContext'
 import useMedia from '../../hooks/useMedia'
 
@@ -12,8 +12,13 @@ import styles from './UserHeaderNav.module.css'
 
 const UserHeaderNav = () => {
   const { userLogout } = useContext(UserContext)
-  const mobile = useMedia('(max-width: 40rem)')
   const [mobileMenu, setMobileMenu] = useState(false)
+  const mobile = useMedia('(max-width: 40rem)')
+
+  const { pathname } = useLocation()
+  useEffect(() => {
+    setMobileMenu(false)
+  }, [pathname])
 
   return (
     <>
