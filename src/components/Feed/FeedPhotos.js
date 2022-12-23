@@ -9,7 +9,7 @@ import styles from './FeedPhotos.module.css'
 
 // { setInfite, page, user, setModalPhoto}
 
-const FeedPhotos = () => {
+const FeedPhotos = ({ setModalPhoto }) => {
   const { data, loading, error, request } = useFecth()
 
   useEffect(() => {
@@ -27,7 +27,11 @@ const FeedPhotos = () => {
     return (
       <ul className={`animeLeft ${styles.feed}`}>
         {data.map((photo) => (
-          <FeedPhotoItem key={photo.id} photo={photo} />
+          <FeedPhotoItem
+            key={photo.id}
+            photo={photo}
+            setModalPhoto={setModalPhoto}
+          />
         ))}
       </ul>
     )
