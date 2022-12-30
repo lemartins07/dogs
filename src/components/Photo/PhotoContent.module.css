@@ -1,15 +1,15 @@
 .photo {
   margin: auto;
   height: 36rem;
-  border-radius: .2rem;
-  background: white; 
+  border-radius: 0.2rem;
+  background: white;
   display: grid;
   grid-template-columns: 36rem 20rem;
   grid-template-rows: auto 1fr auto;
   overflow: hidden;
   opacity: 0;
-  transform: scale(.8);
-  animation: scaleUp .3s forwards;
+  transform: scale(0.8);
+  animation: scaleUp 0.3s forwards;
 }
 
 @keyframes scaleUp {
@@ -20,7 +20,7 @@
 }
 
 .details {
-  padding: 2rem 2rem 0 2rem ;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .img {
@@ -36,23 +36,23 @@
     height: auto;
     max-height: calc(100vh - 4rem);
     overflow-y: auto;
-    grid-template-columns: minmax(20rem, 40rem);    
+    grid-template-columns: minmax(20rem, 40rem);
   }
 
   .img {
-    grid-row: 1 ;
+    grid-row: 1;
   }
 }
 
 .author {
-  opacity: .5;
+  opacity: 0.5;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.author:hover {
+.author a:hover {
   text-decoration: underline;
 }
 
@@ -62,7 +62,7 @@
   height: 10px;
   display: inline-block;
   background: url('../../Assets/visualizacao-black.svg');
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .attributes {
@@ -74,14 +74,14 @@
 }
 
 .attributes li {
-  margin-right: 2rem;  
+  margin-right: 2rem;
 }
 
 .attributes li:befoe {
   content: '';
   display: inline-block;
   height: 20px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   position: relative;
   top: 3px;
   width: 2px;
