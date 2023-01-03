@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import User from './components/User/User'
 import { UserStorage } from './context/UserContext'
 import ProtectedRoute from './components/helper/ProtectedRoute'
+import Photo from './components/Photo/Photo'
 
 import './App.css'
 
@@ -27,6 +28,7 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="foto/:id" element={<Photo />} />
           </Routes>
           <Footer />
         </UserStorage>
