@@ -8,6 +8,7 @@ import useFetch from './../../hooks/useFetch'
 import Input from './../Form/Input'
 import Button from './../Form/Button'
 import Error from './../helper/Error'
+import Head from '../helper/Head'
 
 const UserPhotoPost = () => {
   const nome = useForm()
@@ -44,6 +45,7 @@ const UserPhotoPost = () => {
 
   return (
     <section>
+      <Head title="Poste sua foto" />
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...nome} />
         <Input label="Peso" type="number" name="peso" {...peso} />

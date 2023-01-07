@@ -7,6 +7,7 @@ import useFetch from '../../hooks/useFetch'
 import Input from '../Form/Input'
 import Button from '../Form/Button'
 import Error from '../helper/Error'
+import Head from '../helper/Head'
 
 const LoginCreate = () => {
   const username = useForm()
@@ -30,6 +31,7 @@ const LoginCreate = () => {
 
   return (
     <section className="animeLeft">
+      <Head title="Criar conta" />
       <h1 className="title">Cadastre-se</h1>
 
       <form onSubmit={handleSubmit}>
