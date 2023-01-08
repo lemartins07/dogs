@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  AQUI VAI UMA FOTO DO PROJETO
+  <img alt="Dogs" src="./src/Assets/dogs.png">
 </p>
 
 ## 🚀 Tecnologias
@@ -20,10 +20,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - React
 
+
 ## 💻 Projeto
 
 O Dogs é uma rede social para postagem de fotos de cachorro.
-
 
 
 ## :memo: Licença
